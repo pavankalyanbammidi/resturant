@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People's Restaurant - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <header>
+        <h1>People's Restaurant</h1>
+        <p>Welcome to our world of delicious flavors</p>
+    </header>
+
+    <section class="intro">
+        <h2>Welcome to People's Restaurant</h2>
+        <p>Indulge in a variety of mouth-watering dishes, carefully crafted to offer you a unique dining experience.</p>
+        <a href="menu.html" class="button">Explore Our Menu</a>
+    </section>
+
+    <!-- Testimonial Section (Carousel) -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-item">
+                <p>"The food was absolutely delicious! The best dining experience I've had in Mumbai."</p>
+                <strong>- Rajesh K.</strong>
+            </div>
+            <div class="testimonial-item">
+                <p>"Amazing ambiance and friendly staff. Will definitely come back for more!"</p>
+                <strong>- Priya S.</strong>
+            </div>
+            <div class="testimonial-item">
+                <p>"Loved the Tiramisu dessert! A must-try for anyone visiting this place."</p>
+                <strong>- Deepak M.</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>Visit Us</h2>
+        <p>We are located in Mumbai, India. Come and enjoy your meal with us!</p>
+        <address>
+            <strong>People's Restaurant</strong><br>
+            Plot 123, Food Street,<br>
+            Mumbai, Maharashtra, India<br>
+            <a href="mailto:info@peoplesrestaurant.com">info@peoplesrestaurant.com</a><br>
+            Phone: +91 123 456 7890
+        </address>
+    </section>
+
+    <section class="opening-hours">
+        <h2>Opening Hours</h2>
+        <ul>
+            <li>Monday - Friday: 10:00 AM - 10:00 PM</li>
+            <li>Saturday: 12:00 PM - 12:00 AM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 People's Restaurant</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.testimonial-carousel').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false
+            });
+        });
+    </script>
+
+</body>
+</html>
